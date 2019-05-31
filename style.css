@@ -1,0 +1,125 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Calibri, Times New Roman, serif;
+	font-size: 16px;
+	background-color: #151515;
+	color: white;
+	max-width: 1260px;
+}
+
+.main-header-flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.header-content {
+	margin: 5px 20px;
+}
+
+#img_header {
+	max-width: 225px;
+	width: 100%;
+	height: 125px;
+}
+
+
+header {
+border-bottom: 1px solid #971616;
+}
+
+h1 {
+	font-size: 240%;
+	font-family: Arial, sans-serif; 
+	color: #af4b0e;
+	text-decoration: none;
+}
+
+h2 {
+	color: #971616;
+	font-size: 180%;
+	font-family: Arial, sans-serif; 
+}
+
+nav li {
+	display: inline;
+	list-style-type: none;
+	font-weight: bold;
+	border: 2px solid white;
+	border-radius: 20px;
+	padding: 10px 30px;
+	background-color: #7e7b7a;
+	color: #af340e;
+}
+
+
+#content {
+	
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+}
+
+
+section {
+	
+	border: 1px solid white;
+	margin: 5px;
+	padding: 10px;
+	flex-basis: 795px;
+}
+
+aside {
+	border: 1px solid white;
+	margin: 5px;
+	padding: 10px;
+	flex-basis: 400px;
+	
+}
+
+#Murdoch, #Ogden {
+	width: 120px;
+	float: right;
+	border: 5px solid #151515;
+} 
+
+#Brackenreid{
+	width: 120px;
+	float: left;
+	border: 5px solid #151515;
+} 
+
+#main {
+	width: 190px;
+	margin: 20px 50px 0px 100px;
+}
+
+
+nav ul li a:link, nav ul li a:visited {
+	color: #af340e;
+	text-decoration: none;
+}
+
+header a:link {
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: #971616;
+	background-color: black;
+}
+
+ul li.selected {
+background-color: #cac7c6;
+
+
+}
+
+footer {
+	text-align: center;
+	height: 25px;
+	vertical-align: center;
+	background-color: #af4b0e;
+}
