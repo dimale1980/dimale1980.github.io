@@ -351,7 +351,7 @@ ul li {
 }
 
 .services {
-	margin-top: 75px;
+	padding-top: 75px;
 	margin-bottom: 65px;
 	display: flex;
 	flex-direction: column;
@@ -613,7 +613,7 @@ blockquote {
 
 .team {
 	background-color: #ffffff;
-	margin-top: 75px;
+	padding-top: 75px;
 }
 
 .team-header {
@@ -831,16 +831,18 @@ blockquote {
 
 .other_team-info {
 	background-color: #ffffff;
-	padding: 50px 80px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	width: 80%; 
+	width: 70%; 
 	margin: 0 auto;
+	padding: 30px 40px;
 }
 
 .other_team-info-founder {
-	width: 15%;
+	flex-basis: 20%;
+	max-width: 40%;
+	max-height: auto;
 }
 
 .other_team-info-text {
@@ -874,11 +876,18 @@ blockquote {
 .news {
 	background-image: url(img/news_bg.jpg);
 	background-repeat: no-repeat;
+	background-color: #000000;
 }
 
 .news-header {
 	padding-top: 75px;
 	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 90%;
+	margin: 0 auto;
+	padding-left: 10px;
 }
 
 .news-header h2 {
@@ -890,15 +899,12 @@ blockquote {
 	color: #e1e4e9;
 }
 
-.news-header p {
-	width: 480px;
-}
-
 .article-header {
 	margin-bottom: 50px;
-	padding-left: 65px;
+	width: 90%;
+	margin: 0 auto;
+	padding-left: 10px;
 }
-
 
 .article-header h2 {
 	font-size: 20px;
@@ -914,18 +920,22 @@ blockquote {
 .article-content {
 	display: flex;
 	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+	
 }
 
 .article-intro {
-	padding-left: 65px;
-	width: 570px;
+	width: 70%;
+	padding-left: 10px;
+	text-align: justify;
 }
 
 .button-article {
-	margin: 40px 0 40px 65px;
+	padding: 10px;
+	margin: 20px  70px;
 	border: 1px solid #81868e;
 	border-radius: 30px;
-	padding: 10px 30px;
 	font-size: 16px;
 	background-color: transparent;
 	color: #81868e;
@@ -943,7 +953,8 @@ blockquote {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-right: 100px;
+	margin-right: 40px;
+	margin-top: 30px;
 }
 
 .news-square {
@@ -975,18 +986,21 @@ blockquote {
 	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
+	text-align: center;
 }
 
 .price-header-text {
 	margin-top: 45px;
-	width: 480px;
+	width: 50%;
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .price-content {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 	width: 70%;
 	margin: 0 auto;
 }
@@ -994,8 +1008,9 @@ blockquote {
 .price-content-premium,
 .price-content-desc,
 .price-content-exclusive {
-	width: 25%;
-	min-width: 30%;
+	flex-basis: 25%;
+	max-width: 100%;
+	margin: 10px;
 	background-color: #ffffff;
 	text-align: center;
 	box-shadow: 0 0 1px;
@@ -1004,8 +1019,7 @@ blockquote {
 .price-content-header {
 	background-color: #19bd9a;
 	margin: 0;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 20px 30px;
 	color: #ffffff;
 	text-transform: uppercase;
 }
@@ -1043,6 +1057,7 @@ blockquote {
 	background-color: #333333;
 	background-image: url(img/subscribe_bg.jpg);
 	background-repeat: no-repeat;
+	background-color: #000000;
 	padding-top: 75px;
 	padding-bottom: 100px;
 	display: flex;
@@ -1057,15 +1072,15 @@ blockquote {
 }
 
 .subscribe-text {
-	margin-top: 45px;
-	margin-bottom: 60px;
-	width: 480px;
+	width: 55%;
+	margin: 40px auto;
 }
 
 .subscribe-email {
-	width: 360px;
+	width: 70%;
 	padding: 15px 0 15px 15px;
 	margin-right: 5px;
+	margin-bottom: 20px;
 	color: #ffffff;
 	background-color: transparent;
 	border: 0.05px solid #e1e4e9;
@@ -1092,12 +1107,13 @@ blockquote {
 	flex-direction: column;
 	align-items: center;
 	flex-wrap: wrap;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .contact-header-text {
-	width: 480px;
+	width: 55%;
 	margin-bottom: 60px;
-	text-align: center;
 }
 
 .contact-type {
@@ -1203,6 +1219,7 @@ blockquote {
 	width: 285px;
 	color: #e1e4e9;
 	padding: 12px 5px 12px 12px;
+	margin-top: 10px;
 	border: 0.05px solid #e1e4e9;
 }
 
