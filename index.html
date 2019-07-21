@@ -1,363 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-	<title>Bouncy</title>
+	<title>Барбершоп Бородинский</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="style.css"> 
 </head>
 <body>
 	<header class="main-header">
-		<div class="main-container">
-			<div class="main-header-wrap">
-				<div class="main-header-logo">
-					<a>
-						<img src="img/logo.png" alt="Bouncy_logo">
-					</a>
-				</div>	
-				<nav class="main-header-nav">
+		<div class="container">	
+			<nav class="main_nav">
+				<div class="main_nav-site">
 					<ul>
-						<li class="main-header-item"><a>Hello</a></li>
-						<li class="main-header-item"><a href="#about">About</a></li>
-						<li class="main-header-item"><a href="#services">Services</a></li>
-						<li class="main-header-item"><a href="#portfolio">Portfolio</a></li>
-						<li class="main-header-item"><a href="#team">Team</a></li>
-						<li class="main-header-item"><a href="#blog">Blog</a></li>
-						<li class="main-header-item"><a href="#contact">Contact</a></li>
+						<li class="main_nav-list selected">
+							<a>Информация</a>
+						</li>
+						<li class="main_nav-list">
+							<a href="#">Новости</a>
+						</li>
+						<li class="main_nav-list">
+							<a href="price-list.html">Прайс-лист</a>
+						</li>
+						<li class="main_nav-list">
+							<a href="shop.html">Магазин</a>
+						</li>
+						<li class="main_nav-list">
+							<a href="contacts.html">Контакты</a>
+						</li>
 					</ul>
-				</nav>
-			</div>
-			<div class="main-header-content">
-				<h1>We Are Code Cafe</h1>
-				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis<br> praesentium voluptatum</p>
-				<button class="button-header"><a href="#"></a></button>
-			</div>
-		</div>	
+				</div>
+				<div class="main_nav-user">
+					<button class="main_nav-user-button">Вход</button>
+				</div>
+			</nav>
+		</div>
 	</header>
-	<section class="main-container about-intro">
-		<div class="about-intro-text">
-			<h2 class="subheader">This is Bouncy</h2>
-			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
-			</p>
-			<button class="button">Read more</button>
-		</div>
-		<div class="about-intro-img">
-			<img src="img/ipad.png" alt="ipad">
-		</div>
-	</section>
-	<section class="about-wrap" id="about">
-		<div class="main-container about-details">
-			<div class="about-details-text">
-				<h2 class="subheader">DetailS ABOUT BOUNCY</h2>
-				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-				</p>
-				<div class="about-details-icons">
-					<button class="icon icon-heart"></button>
-					<button class="icon icon-mouse"></button>
-					<button class="icon icon-lamp"></button>
+	<main>
+		<img class="main_nav-logo" src="img/logo.png" alt="Барбершоп Бородинский">
+		<h1 class="visually_hidden">Барбершоп Бородинский</h1>
+		<section class="features">
+			<div class="container">
+				<div class="features-list">
+					<div class="features-list_block">
+						<h2 class="features-list-header">Быстро</h2>
+						<p class="features-list-text">Мы делаем свою работу быстро! два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!
+						</p>
+					</div>
+					<div class="features-list_block">
+						<h2 class="features-list-header">Круто</h2>
+						<p class="features-list-text">Забудьте, как вы стриглись раньше. мы сделаем из вас звезду футбола или кино! во всяком случае внешне.
+						</p>
+					</div>
+					<div class="features-list_block">
+						<h2 class="features-list-header">Дорого</h2>
+						<p class="features-list-text">Наши мастера — профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не дает определеный статус?
+						</p>
+					</div>
 				</div>
-			</div>		
-			<div class="about-ideas">
-				<h3>Creative Ideas</h3>
-				<p class="about-ideas-column_left">
-				At <span class="text-emphasize">vero</span> eos et accusamus et iusto odio dignissimos <b>ducimus</b> qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores 	
-				</p>
-				<p class="about-ideas-column_right">
-				At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque <b>corrupti quos</b> dolores et quas molestias <span class="text-emphasize">excepturi</span> sint occaecati cupiditate non provident, <b>similique</b> sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem 	
-				</p>
 			</div>
-		</div>
-	</section>
-	<section class="featured-projects">
-		<div class="main-container featured-projects-text">
-			<h2 class="subheader">Featured projects</h2>
-			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-		</div>
-		<div class="featured-projects-wrap">	
-			<div class="featured-projects-img">		
-					<img class="featured-projects-img-tag" src="img/featured-projects.jpg" alt="whiskey-tag">
-			</div>
-			<footer class="featured-projects-footer">
-				<div class="featured-projects-footer-wrap">
-					<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-					<button class="featured-projects-button">Submit now</button>
-				</div>
-			</footer>
-		</div>	
-	</section>
-	<section class="services" id="services">
-		<h2 class="subheader">Our services</h2>
-		<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-		<div class="services-details">
-			<div class="services-details-design-icons">
-				<button class="icon-services icon-wrench"></button>
-				<button class="icon-services icon-paint"></button>
-				<button class="icon-services icon-pad"></button>
-				<button class="icon-services icon-wire"></button>
-			</div>
-			<div class="services-details-design-text">
-				<h3>Graphic Design</h3>
-				<p>At vero eos et accusamus et <span class="text-emphasize">iusto</span> odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti</p>
-				<p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, <span class="text-emphasize">similique</span> sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
-			</div>
-			<div class="services-details-statistic">
-				<div class="services-details-statistic-number">
-					<p><span class="statistic-number statistic-number1">80</span>%</p>
-					<p><span class="statistic-number statistic-number2">75</span>%</p>
-					<p><span class="statistic-number statistic-number3">60</span>%</p>
-				</div> 
-				<div class="services-details-statistic-text">
-					<p>Branding</p>
-					<p>Web Design</p>
-					<p>UI/UX</p>
-				</div>
-			</div>	
-		</div>
-	</section>
-	<footer class="services-footer">
-		<div class="main-container">
-			<div class="services-footer-wrap">
-				<div class="services-footer-quote">
-					<p class="subheader services-footer-quote-subheader">Impressed ?</p>
-					<blockquote>
-						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
-					</blockquote>
-					<p class="services-footer-quote-author">- Abdullah Noman <br> Creatice Director, <span class="text-emphasize">Code Cafe</span></p>
-				</div>
-				<div class="services-footer-wrap-screen">
-					<img src="img/services-screen.png" alt="Screen">
-				</div>
-			</div>	
-		</div>
-	</footer>
-	<section class="services-portfolio" id="portfolio">
-		<div class="main-container">
-			<div class="main-container-wrap">
-				<h2 class="subheader">THE PORTFOLIO</h2>
-				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-				<ul>
-					<li class="services-portfolio-item">All works</li>
-					<li class="services-portfolio-item">Print</li>
-					<li class="services-portfolio-item">Identity</li>
-					<li class="services-portfolio-item">Branding</li>
-					<li class="services-portfolio-item">Web</li>
-					<li class="services-portfolio-item">HTML</li>
-					<li class="services-portfolio-item">Wordpress</li>
-				</ul>
-			</div> 
-		<img class="services-portfolio-photo" src="img/portfolio-img.jpg" alt="Portfolio">
-		<footer class="services-portfolio-footer">
-			<p>At vero eos et <b>accusamus</b> et iusto odio <b>dignissimos</b> ducimus qui blanditiis</p>
-			<button class="featured-projects-button">Start project</button>
-		</footer>
-		</div>	
-	</section>
-	<section class="team" id="team">
-		<div class="main-container">
-			<header class="team-header">
-				<h2 class="subheader">the team</h2>
-				<p class="team-header-info">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-			</header>
-			<div class="team-cr_director">
-				<img class="img-cr_director" src="img/cr_director.jpg" alt="Creative director">
-				<a class="inst" href="#"></a>
-				<a class="fb" href="#"></a>
-				<a class="twit" href="#"></a>
-				<div class="team-cr_director-info">
-					<p><span class="team-name">Abdullah Noman</span><br><span class="team-position">Creative Director, Code Cafe</span></p>
-					<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-					<div class="team-cr_director-info-list">
-						<ul>
-							<li class="cr_director-branding">BRANDING</li>
-							<li class="cr_director-design">Web Design</li>
-							<li class="cr_director-interface">User Interface</li>
-						</ul>
-						<ul>
-							<li>80 %</li>
-							<li>65 %</li>
-							<li>75 %</li>
-						</ul>
-					</div>		
-				</div>		
-			</div>	
-			<div class="other_team-button">
-				<button class="square"></button>
-				<button class="square"></button>
-				<button class="square"></button>
-			</div>
-		</div>
-	</section>
-	<footer class="team-footer">
-		<p>Already Loved Us? Let’s talk!</p>
-		<button class="featured-projects-button">Contact Us</button>
-	</footer>
-	<section class="other_team">
-		<div class="main-container">
-			<header class="header-other_team">
-				<h2 class="subheader">Testimonials</h2>
-				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-			</header>
-			<section class="other_team-info">
-				<img class="other_team-info-founder" src="img/founder.jpg" alt="Founder">
-				<div class="other_team-info-text">
-					<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</p>
-					<p><span class="founder-name">PARTHO</span><br><span class="founder-position">FOUNDER, ARTWAYS BD</span></p>
-				</div>
-			<div class="other_team-button">
-				<button class="square"></button>
-				<button class="square"></button>
-				<button class="square"></button>
-			</div>
-			</section>
-		</div>
-	</section>
-	<section class="news">
-		<div class="main-container">
-			<header class="news-header" id="blog">
-				<h2>LATEST NEWS</h2>
-				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-			</header>
-			<article>
-				<header class="article-header">
-					<h2>The trending Landing Pages</h2>
-					<p class="article-header-text"><span class="founder-position"><em>by </em></span><span class="founder-name"><em>Kabir Uddin</em></span>
-					</p>
-					<p class="article-header-stat">6950 Likes - 243 Comments - 703 shares</p>
-				</header>
-				<div class="article-content">
-					<p class="article-intro">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio... 
-					</p>
-					<div class="news-button">
-						<button class="news-square"></button>
-						<button class="news-square"></button>
-						<button class="news-square"></button>
+		</section>
+		<section class="info">
+			<div class="container">
+				<div class="content">
+					<div class="info-news">
+						<article class="article-news">
+							<h2 class="subheader">Новости</h2>
+							<p class="info-text">Нам наконец завезли ягермайстер! теперь вы можете пропустить стаканчик во время стрижки
+							</p>
+							<time class="article-time" datetime="2019-01-11"><a href="#"> 11 января</a></time>
+							<p class="info-text">В нашей команде пополнение, борис «бритва» стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды
+							</p>
+							<time class="article-time" datetime="2019-01-18"><a href="#"> 18 января</a></time>
+							<a class="link_button"target="_blank" href="#">Все новости</a>
+						</article>
+					</div>
+					<div class="info-photo">
+						<h2 class="subheader">Фотогалерея</h2>
+						<img class="info-photo-carousel" src="img/hall.jpg" alt="Barbershop hall">
+						<div class="button-wrap">
+							<button class="button">Назад</button>
+							<button class="button">Вперед</button>
+						</div>
 					</div>
 				</div>	
-				<button class="button-article">+ Read More</button>	
-			</article>
-		</div>
-	</section>
-	<section class="price">
-		<div class="main-container">
-			<header class="price-header">
-				<h2 class="subheader">Our Price</h2>
-				<p class="price-header-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-			</header>
-			<section class="price-content">
-				<div class="price-content-premium">
-					<h3 class="price-content-header">PREMIUM</h3>
-					<p class="price-content-text"><span class="price-amount">$ 60</span><br><span class="price-term">Per Month</span></p>
-				</div>
-				<div class="price-content-desc">
-					<ul>
-						<li>Full Branding</li>
-						<li>Project Management </li>
-						<li>Unlimited Revisions</li>
-						<li>24/7 h Service</li>
-						<li>Free Domain</li>
-						<li>Free Hosting</li>
-					</ul>
-					<p class="price-content-link"><a href="#">Let’s Start&nbsp&nbsp&nbsp&nbsp&gt;</a></p>
-				</div>
-				<div class="price-content-exclusive">
-					<h3 class="price-content-header">EXCLUSIVE</h3>
-					<p class="price-content-text"><span class="price-amount">$ 80</span><br><span class="price-term">Per Month</span></p>
-				</div>
-			</section>
-		</div>		
-	</section>
-	<section class="subscribe">
-		<div class="main-container">
-			<header class="subscribe-header">
-				<h2 class="subheader subscribe-subheader">Subscribe us</h2>
-				<p class="subscribe-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-			</header>
-			<form action="#" method="POST">
-				<input class="subscribe-email" type="email" name="email" placeholder="Email Address" required="" maxlength="40">
-				<button class="subscribe-button">Submit</button>
-			</form>
-		</div>
-	</section>
-	<section class="contact" id="contact">
-		<div class="main-container">
-			<header class="contact-header">
-				<h2 class="subheader">Contact Us</h2>
-				<p class="contact-header-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-				</p>
-			</header>
-			<section class="contact-type">
-				<div class="contact-type-box contact-email">
-					<p class="contact-type-box-header">EMAIL</p>
-					<p class="contact-type-box-text">hello@codecafe.com<br>Personal@codecafe.com
-					</p>
-				</div>
-				<div class="contact-type-box contact-location">
-					<p class="contact-type-box-header">OUR OFFICE</p>
-					<p class="contact-type-box-text">240 Bhatikhana, 8200 Barisal<br>Bangladesh
-					</p>
-				</div>
-				<div class="contact-type-box contact-phone">
-					<p class="contact-type-box-header">PHONE</p>
-					<p class="contact-type-box-text">+00 11 66 99 66 44<br>11 99 66 44 065
-					</p>
-				</div>
-			</section>
-		</div>
-	</section>
-	<section class="form">
-		<div class="main-container">
-			<form class="form-contact" action="#" method="POST">
-				<div class="form-data">
-					<input class="form-data-info" type="text" name="name" placeholder="Your name">
-					<input class="form-data-info" type="email" name="email" placeholder="Email address">
-					<input class="form-data-info" type="text" name="subject" placeholder="Subject">
-				</div>
-				<textarea name="comment"></textarea>
-				<input class="form-contact-submit" type="submit" value="Submit now">
-			</form>
-		</div>
-	</section>
-	<div class="map">
-		<div class="map-text">
-			<p>find us on the map</p>
-			<button class="button-map"><a href="#"></a></button>
-		</div>
-	</div>
-	<footer class="main-footer">
-		<div class="main-container">
-			<img class="main-footer-img" src="img/logo-footer.png" alt="logo">
-			<p>Copyright 2015. All rights Reserved</p>
-			<div class="main-footer-social">
-				<ul>
-					<li>
-						<a href="#">
-							<img src="img/footer-fb.png" alt="Facebook">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="img/footer-twit.png" alt="Twitter">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="img/footer-lin.png" alt="Linkedin">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="img/footer-inst.png" alt="Instagramm">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="img/footer-vm.png" alt="Vimeo">
-						</a>
-					</li>
-				</ul>
 			</div>
+		</section>
+		<section class="contacts-booking">
+			<div class="container">
+				<div class="content">
+					<div class="contacts">
+						<h2 class="subheader">Контактная информация</h2>
+						<p class="info-text">Барбершоп «бородинский»<br> адрес: г. Бородино, ул. Кутузова, д. 19/8<br> телефон: +1 (555) 777-02-77
+						</p>
+						<p class="info-text">Время работы:<br>пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00
+						</p>
+						<div class="button-wrap">
+							<button class="button">Как проехать</button>
+							<button class="button">Обратная связь</button>
+						</div>
+					</div>
+					<div class="booking">
+						<h2 class="subheader">Записаться</h2>
+						<p class="info-text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
+						</p>
+						<form class="main_form" method="post" action="#">
+							<span class="main_form-data">
+								<label><span class="main_form-text">Дата</span><input type="text" name="date" placeholder="08.07.2019"></label>
+							</span>
+							<span class="main_form-data">
+								<label><span class="main_form-text">Время</span><input type="text" name="time" placeholder="10:00"></label>
+							</span>	
+							<span class="main_form-data">	
+								<label><span class="main_form-text">Ваше имя</span><input type="text" name="name" placeholder="Борода"></label>
+							</span>	
+							<span class="main_form-data">	
+								<label><span class="main_form-text">Телефон</span><input type="tel" name="telephone" placeholder="+1 555 456-78-90"></label>
+							</span>
+						</form>
+						<div class="main_form-data-button">
+							<button type="submit" class="button button-form">Отправить</button>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</section>
+	</main>
+	<footer class="footer-main">
+		<div class="container">
+			<div class="footer-content">
+				<p class="footer-contact footer-text">Барбершоп «бородинский»<br>адрес: г. Бородино, ул. Кутузова, д. 19/8<br><a href="contacts.html">Как нас найти?</a><br>Телефон: +1 (555) 777-02-77
+				</p>
+				<div class="footer-social">
+					<p class="footer-text">Давайте дружить!</p>
+					<div class="social-link">
+						<a class="social-link-net" href="#">
+							<img src="img/vk.png" alt="Vkontakte">
+						</a>
+						<a class="social-link-net" href="#">
+							<img src="img/fb.png" alt="Facebook">
+						</a>
+						<a class="social-link-net" href="#">
+							<img src="img/inst.png" alt="Instagram">
+						</a>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<p class="footer-text">Разработано:</p>
+					<button class="button footer-button"><a href="#">Html Academy</a></button>
+				</div>
+			</div>	
 		</div>
 	</footer>
 </body>

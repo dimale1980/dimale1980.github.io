@@ -1,27 +1,101 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-	<metacharset="UTF-8">
-	<title>Contacts</title>
-	<link rel="stylesheet" href="style.css">
+	<title>Барбершоп Бородинский</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="style.css"> 
 </head>
-
 <body>
-<header>
-		<img id="img_header" src="./images/header.jpg"> 
-		<h1>Myrdoch mysteries</h1>
+	<header class="main-header main-header-non_index">
+		<div class="container">	
+			<nav class="main_nav">
+				<a href="index.html">
+					<img class="nav-logo-non_index" src="img/logo-non_index.png" alt="Барбершоп Бородинский">
+				</a>	
+				<div class="main_nav-site main_nav-non_index">
+					<ul>
+						<li class="main_nav-list">
+							<a href="index.html">Информация</a>
+						</li>
+						<li class="main_nav-list">
+							<a href="#">Новости</a>
+						</li>
+						<li class="main_nav-list">
+							<a href="price-list.html">Прайс-лист</a>
+						</li>
+						<li class="main_nav-list">
+							<a href="shop.html">Магазин</a>
+						</li>
+						<li class="main_nav-list selected-non_index">
+							<a>Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="main_nav-user">
+					<button class="main_nav-user-button">Вход</button>
+				</div>
+			</nav>
+		</div>
 	</header>
-	
-	<nav>
-		<ul>
-			<li><a href="index.html"> main</a> </li>
-			<li class="selected"><a href="contacts.html">contacts</a></li>
-		</ul>
-	</nav>
-
-	<footer>
-		All presented by me 
+	<div class="non_index-bg">
+		<div class="container">
+			<h1 class="header-content">Контакты</h1>
+			<ul class="crumbs">
+				<li class="crumbs-item crumbs-square">
+					<a href="index.html">Главная</a>
+				</li>
+				<li class="crumbs-item crumbs-selected">
+					<a href="#">Контакты</a>
+				</li>
+			</ul>
+			<section class="contacts-map">
+					<div class="content contacts-content">
+						<div class="contacts">
+							<h2 class="subheader-non_index subheader-contacts">Адрес и время работы</h2>
+							<p class="info-text">Барбершоп «бородинский»<br> адрес: г. Бородино, ул. Кутузова, д. 19/8<br> телефон: +1 (555) 777-02-77
+							</p>
+							<p class="info-text">Время работы:<br>пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00
+							</p>
+							<div class="button-wrap">
+								<button class="button">Обратная связь</button>
+							</div>
+						</div>
+						<div class="map-info">
+							<h2 class="subheader-non_index subheader-contacts">Как проехать</h2>
+							<img class="map" src="img/map.jpg" alt=г. Бородино, ул. Кутузова, д. 19/8">
+							</div>
+						</div>
+					</div>	
+			</section>
+		</div>
+	</div>		
+	<footer class="footer-main">
+		<div class="container">
+			<div class="footer-content">
+				<p class="footer-contact footer-text">Барбершоп «бородинский»<br>адрес: г. Бородино, ул. Кутузова, д. 19/8<br><a href="#">Как нас найти?</a><br>Телефон: +1 (555) 777-02-77
+				</p>
+				<div class="footer-social">
+					<p class="footer-text">Давайте дружить!</p>
+					<div class="social-link">
+						<a class="social-link-net" href="#">
+							<img src="img/vk.png" alt="Vkontakte">
+						</a>
+						<a class="social-link-net" href="#">
+							<img src="img/fb.png" alt="Facebook">
+						</a>
+						<a class="social-link-net" href="#">
+							<img src="img/inst.png" alt="Instagram">
+						</a>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<p class="footer-text">Разработано:</p>
+					<button class="button footer-button"><a href="#">Html Academy</a></button>
+				</div>
+			</div>	
+		</div>
 	</footer>
 </body>
 </html>
