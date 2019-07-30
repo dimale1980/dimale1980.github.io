@@ -14,14 +14,14 @@
 			<nav class="main_nav">
 				<a href="index.html">
 					<img class="nav-logo-non_index" src="img/logo-non_index.png" alt="Барбершоп Бородинский">
-				</a>	
+				</a>
 				<div class="main_nav-site main_nav-non_index">
 					<ul>
 						<li class="main_nav-list">
 							<a href="index.html">Информация</a>
 						</li>
-						<li class="main_nav-list">
-							<a href="news.html">Новости</a>
+						<li class="main_nav-list selected-non_index">
+							<a>Новости</a>
 						</li>
 						<li class="main_nav-list">
 							<a href="price-list.html">Прайс-лист</a>
@@ -29,8 +29,8 @@
 						<li class="main_nav-list">
 							<a href="shop.html">Магазин</a>
 						</li>
-						<li class="main_nav-list selected-non_index_2var">
-							<a>Контакты</a>
+						<li class="main_nav-list">
+							<a href="contacts.html">Контакты</a>
 						</li>
 					</ul>
 				</div>
@@ -42,35 +42,35 @@
 	</header>
 	<div class="non_index-bg">
 		<div class="container">
-			<h1 class="header-content">Контакты</h1>
+			<h1 class="header-content">Новости</h1>
 			<ul class="crumbs">
 				<li class="crumbs-item crumbs-square">
 					<a href="index.html">Главная</a>
 				</li>
 				<li class="crumbs-item crumbs-selected">
-					<a href="#">Контакты</a>
+					<a href="#">Новости</a>
 				</li>
 			</ul>
-			<section class="contacts-map">
-					<div class="content contacts-content">
-						<div class="contacts">
-							<h2 class="subheader-non_index subheader-contacts">Адрес и время работы</h2>
-							<p class="info-text">Барбершоп «бородинский»<br> адрес: г. Бородино, ул. Кутузова, д. 19/8<br> телефон: +1 (555) 777-02-77
-							</p>
-							<p class="info-text">Время работы:<br>пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00
-							</p>
-							<div class="button-wrap">
-								<button class="button" onclick="feedBackShow()">Обратная связь</button>
-							</div>
-						</div>
-						<div class="map-info">
-							<h2 class="subheader-non_index subheader-contacts">Как проехать</h2>
-							
-							<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22051.69565715911!2d29.225397381183857!3d46.30066231300764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c82e26c7dcb4ed%3A0xb12db00aae997506!2z0JHQvtGA0L7QtNC40L3Qviwg0J7QtNC10YHRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjg1NDA!5e0!3m2!1sru!2sua!4v1564426538968!5m2!1sru!2sua" width="360" height="290" frameborder="0" style="border:0" allowfullscreen></iframe>
-							</div>
-						</div>
-					</div>	
+			<section class="aricle">
+				<img class="article-img" src="img/news/beard_secrets.jpg" alt="Секреты мягкой и послушной бороды">
+				<a href="articles/beard_secrets.html">
+					<h2 class="subheader-non_index">Секреты мягкой и послушной бороды</h2></a>
+					</a>
+				<time class="article-time" datetime="2019-01-18">18 января</time>
+				<a class="button button-article" href="articles/beard_secrets.html">Подробнее</a>
 			</section>
+			<section class="aricle">
+				<img class="article-img" src="img/news/yagermeyster.jpg" alt="Нам наконец завезли ягермайстер">
+				<a href="articles/jagermeister.html">
+					<h2 class="subheader-non_index">Нам наконец завезли ягермайстер!</h2></a>
+				</a>
+				<time class="article-time" datetime="2019-01-11">11 января</time>
+				<a href="articles/jagermeister.html" class="button button-article">Подробнее</a>
+			</section>
+				<div class="button-article-sw-wrap">	
+					<a class="button button-article-sw button-switch-selected">1</a>
+					<a href="articles/news_archive.html" class="button button-article-sw">2</a>
+				</div>
 		</div>
 	</div>		
 	<footer class="footer-main">
@@ -117,7 +117,7 @@
 						<input class="visually_hidden" type="checkbox" name="remember_me">
 						<span class="icon-check_box"></span>
 					</label>
-					<p onclick="updateSiteShow()" class="pop_up-forget">Я забыл пароль!</p>
+					<p class="pop_up-forget" onclick="updateSiteShow()">Я забыл пароль!</p>
 					<button class="button button-form pop_up-button" onclick="updateSiteShow()">Войти</button>
 				</div>
 			</form>
@@ -131,33 +131,12 @@
 			<button class="button button-message" onclick="updateSiteClose()">Хорошо</button>
 		</div>
 	</div>
-	<!--<div id="js-got_feedback" class="message-feedback">
-		<p>Спасибо за обратную связь. Мы обязательно вам ответим</p>
-		<p class="message-ps">P.S. Для нас клиент прежде всего</p>
-		<button class="button_close" title="Закрыть" onclick="gotFeedbackClose()"></button>
-		<button class="button button-message" onclick="gotFeedbackClose()">Хорошо</button>
-	</div>!-->
 	<div id="js-socialUpdate" class="social_update-overlay">
 		<div class="message-updating_social">
 			<p>Наши группы засияют по новому. Чуть-чуть потерпите</p>
 			<p class="message-ps">P.S. Красота требует жертв</p>
 			<button class="button_close" title="Закрыть" onclick="socialMessageClose()"></button>
 			<button class="button button-message" onclick="socialMessageClose()">Хорошо</button>
-		</div>
-	</div>	
-	<div id="js-feedback" class="feedback-overlay">
-		<div  class="pop_up-feedback">
-			<form method="POST" action="#">
-				<p class="pop_up-sub_form-text feedback-text">Ваше имя:
-					<input class="pop_up-form-login" type="text" name="name_feedback" placeholder="БОРОДАЧ">
-				</p>
-				<p class="pop_up-sub_form-text feedback-text">Ваш e-mail:
-				<input class="pop_up-form-email" type="email" name="email_feedback" placeholder="borodach@yahoo.com">
-				</p>
-				<textarea class="pop_up-form-textarea pop_up-text_area" placeholder="Здесь можно оставить обратную связь" required></textarea>
-				<input class="button button-feedback" type="submit" value="Отправить" onclick="updateSiteShow()">
-			</form>
-			<button class="button_close" title="Закрыть" onclick="feedBackClose()"></button>
 		</div>
 	</div>	
 </body>
